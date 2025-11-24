@@ -1,4 +1,7 @@
-﻿namespace TicketManager
+﻿using TicketManager.Models;
+using TicketManager.Services;
+
+namespace TicketManager
 {
     internal class Program
     {
@@ -7,6 +10,7 @@
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
             // Tickets holen
+            StorageService storage = new StorageService();
             Menu menu = new Menu();
             List<Ticket> tickets;
 
@@ -15,12 +19,12 @@
                 tickets = TicketList.GetTicketList();
 
                 // und sofort einmal speichern
-                menu.SaveTickets(tickets);
+                storage.SaveTickets(tickets);
             }
             else
             {
                 // Wenn Datei existiert dann gespeicherte Tickets nehmen
-                tickets = menu.LoadTickets();
+                tickets = storage.LoadTickets();
             }
 
             // Menü starten
