@@ -62,6 +62,7 @@ namespace TicketManager
                 Console.WriteLine("13 - Kunden löschen");
                 Console.WriteLine("14 - Kunde suchen");
                 Console.WriteLine("15 - Tickets dieses Kunden anzeigen");
+                Console.WriteLine("16 - Ticket einem Kunden zuordnen");
 
                 Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -121,6 +122,26 @@ namespace TicketManager
 
                     case "11":
                         customerService.CreateNewCustomer(customers);
+                        break;
+
+                    case "12":
+                        customerService.EditCustomer(customers);
+                        break;
+
+                    case "13":
+                        customerService.DeleteCustomer(customers);
+                        break;
+
+                    case "14":
+                        customerService.SearchCustomer(customers);
+                        break;
+
+                    case "15":
+                        customerService.ShowTicketsOfCustomer(customers, tickets);
+                        break;
+
+                    case "16":
+                        customerService.AssignTicketToCustomer(customers, tickets, storageService);
                         break;
 
                     case "0": // Programm beenden
