@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.0.11205.157 d18.0
+VisualStudioVersion = 18.0.11205.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketManager", "TicketManager\TicketManager.csproj", "{FFD566BD-A381-8D81-9D2D-4D695DDDA171}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordValidator", "PasswordValidator\PasswordValidator.csproj", "{1903688C-04F5-C960-2F77-222B682E5A78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FFD566BD-A381-8D81-9D2D-4D695DDDA171}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFD566BD-A381-8D81-9D2D-4D695DDDA171}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFD566BD-A381-8D81-9D2D-4D695DDDA171}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1903688C-04F5-C960-2F77-222B682E5A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1903688C-04F5-C960-2F77-222B682E5A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1903688C-04F5-C960-2F77-222B682E5A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1903688C-04F5-C960-2F77-222B682E5A78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
